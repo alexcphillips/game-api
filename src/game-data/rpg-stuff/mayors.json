@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name": "Marlin",
+        "role": "Fishing Mayor",
+        "description": "Marlin, the Ocean's Emissary, rewards fishermen with unmatched bounties and treasures.",
+        "perks": [
+            {
+                "name": "Tidal Blessing",
+                "description": "Gain +25% more fishing experience.",
+                "effect": "fishing_experience_rate",
+                "value": 1.25
+            },
+            {
+                "name": "Ocean's Bounty",
+                "description": "Sea creature chance is increased by 10%.",
+                "effect": "sea_creature_chance",
+                "value": 1.1
+            },
+            {
+                "name": "Fishing Frenzy",
+                "description": "Schedules 3 Fishing Fiestas during Marlin's tenure.",
+                "effect": "fishing_fiesta",
+                "value": null
+            }
+        ]
+    }
+]
