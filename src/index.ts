@@ -1,7 +1,7 @@
 import app from "./app";
 import { connectDb, mongo } from "./db";
 import { ApiConfig } from "../app.config";
-import { redis } from "./redis/connection";
+// import { redis } from "./redis/connection";
 
 (async () => {
   try {
@@ -19,7 +19,7 @@ const server = app.listen(port, () =>
 
 export const shutdown = async () => {
   await Promise.allSettled([
-    redis.cache && redis.cache.quit(),
+    // redis.cache && redis.cache.quit(),
     mongo.client && mongo.client.close(),
     server && server.close(),
   ]);
